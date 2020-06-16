@@ -1,10 +1,22 @@
-# Build
+# Build (If you are interested in going from scratch)
 
 docker build -t newchain:latest . --network=host
 
+# Pull
+At this point in time, a Docker image dedicated to this task has been built. Users can directly pull the image as follows:
+
+docker pull xiawuatzeuux/newchain
+
+
 # Run
 
+If you are building the image by yourself, you can try the following instruction:
+
 docker run -it --name newchain -d -p 8801:8801 -p 38311:38311/tcp -p 38311:38311/udp newchain:latest
+
+If you use the image built by Xiawu, please use the following instruction:
+docker run -it --name newchain -d -p 8801:8801 -p 38311:38311/tcp -p 38311:38311/udp xiawuatzeuux/newchain:latest
+
 
 # 说明
 newchain_docker.sh相较于[https://release.cloud.diynova.com/newton/newchain-deploy/mainnet/newchain.sh](https://release.cloud.diynova.com/newton/newchain-deploy/mainnet/newchain.sh)的不同在于，我们将supervisor相关代码片段给删除了。
