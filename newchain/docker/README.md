@@ -12,10 +12,11 @@ docker pull xiawuatzeuux/newchain
 
 If you are building the image by yourself, you can try the following instruction:
 
-docker run -it --name newchain -d -p 8801:8801 -p 38311:38311/tcp -p 38311:38311/udp newchain:latest
+ docker run -it --name newchain -d -p 8801:8801 -p 38311:38311/tcp -p 38311:38311/udp newchain:latest
 
 If you use the image built by Xiawu, please use the following instruction:
-docker run -it --name newchain -d -p 8801:8801 -p 38311:38311/tcp -p 38311:38311/udp xiawuatzeuux/newchain:latest
+
+ docker run -it --name newchain -d -p 8801:8801 -p 38311:38311/tcp -p 38311:38311/udp xiawuatzeuux/newchain:latest
 
 
 # 说明
